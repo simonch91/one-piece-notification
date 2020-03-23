@@ -69,3 +69,4 @@ if day1 >= day2:
             with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as server:
                 server.login(from_email, password)
                 server.sendmail(from_email, to_email, msg.as_string())
+
